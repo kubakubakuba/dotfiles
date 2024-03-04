@@ -119,6 +119,9 @@
 	python311Packages.numpy
 	python311Packages.scipy
 	python311Packages.graphviz
+	python311Packages.pip
+	python311Packages.notebook
+	jupyter
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
