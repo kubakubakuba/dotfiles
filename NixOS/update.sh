@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 USR=jakub
-TIME="date +%Y-%m-%d-%H-%M-%S"
+TIME=$(date +%Y-%m-%d-%H-%M-%S)
 sudo nixos-rebuild switch
 
 exit_code=$?
