@@ -121,6 +121,7 @@
 	python311Packages.graphviz
 	python311Packages.pip
 	python311Packages.notebook
+	python311Packages.jupyter
 	jupyter
   ];
 
