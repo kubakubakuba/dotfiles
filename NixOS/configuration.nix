@@ -126,6 +126,7 @@
 	python311Packages.jupyterlab
 	python311Packages.pip
 	graphviz
+	nodejs_21
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
