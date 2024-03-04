@@ -116,13 +116,14 @@
 	python3
 	zsh
 	kitty
+	python311Packages.ipykernel
 	python311Packages.numpy
 	python311Packages.scipy
 	python311Packages.graphviz
 	python311Packages.pip
 	python311Packages.notebook
 	python311Packages.jupyter
-	jupyter
+	python311Packages.jupyterlab
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
