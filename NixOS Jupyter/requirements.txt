@@ -1,0 +1,11 @@
+matplotlib
+ipython
+ipykernel
+notebook
+jupyter
+jupyterlab
+numpy
+scipy
+pandas
+graphviz
+pymdptoolbox
