@@ -117,15 +117,6 @@
 	python3
 	zsh
 	kitty
-	python311Packages.ipykernel
-	python311Packages.numpy
-	python311Packages.scipy
-	python311Packages.graphviz
-	python311Packages.pip
-	python311Packages.notebook
-	python311Packages.jupyter
-	python311Packages.jupyterlab
-	python311Packages.pip
 	graphviz
 	nodejs_21
   ];
