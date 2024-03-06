@@ -104,6 +104,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     	neovim
+	netcat
 	wget
 	curl
 	zip
