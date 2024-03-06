@@ -94,6 +94,7 @@
 	kate
 	discord
 	vscode
+	steam
     ];
   };
 
