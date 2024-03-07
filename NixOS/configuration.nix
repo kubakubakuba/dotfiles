@@ -121,6 +121,8 @@
 	kitty
 	graphviz
 	nodejs_21
+
+	racket
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
