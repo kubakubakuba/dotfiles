@@ -121,7 +121,6 @@
 	kitty
 	graphviz
 	nodejs_21
-	typst
 
 	racket
   ];
