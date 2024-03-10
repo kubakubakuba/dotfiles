@@ -121,6 +121,7 @@
 	kitty
 	graphviz
 	nodejs_21
+	libz
 
 	racket
   ];
