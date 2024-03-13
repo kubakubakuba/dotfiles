@@ -81,6 +81,7 @@
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
+  #fix for Steam
   hardware.opengl.driSupport32Bit = true;
 
   programs.zsh.enable = true;
@@ -133,6 +134,7 @@
 	texliveFull
   ];
 
+  #disable keyboard backlight from turning on after sleep
   systemd.services.disable-keyboard-backlight = {
     enable = true;
     description = "Disable keyboard backlight on resume";
