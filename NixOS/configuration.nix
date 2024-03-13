@@ -128,7 +128,7 @@
 	ffmpeg
 	imagemagick
 	yt-dlp
-	texliveTeTeX
+	texliveFull
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
