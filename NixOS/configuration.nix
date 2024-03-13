@@ -131,6 +131,27 @@
 	texliveFull
   ];
 
+  systemd.services.disable-keyboard-backlight = {
+    enable = true;
+    description = "Disable keyboard backlight on resume";
+    serviceConfig = {
+      Type = "oneshot";
+    };
+    script = ''
+      /run/current-system/sw/bin/echo 0 > "/sys/devices/platform/thinkpad_acpi/leds/tpacpi::kbd_backlight/brightness"
+    '';
+    wantedBy = [
+      "sleep.target"
+      "hibernate.target"
+      "hybrid-sleep.target"
+    ];
+    after = [
+      "sleep.target"
+      "hibernate.target"
+      "hybrid-sleep.target"
+    ];
+  };
+
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
