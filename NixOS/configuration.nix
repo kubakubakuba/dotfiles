@@ -125,6 +125,10 @@
 
 	racket
 	libreoffice
+	ffmpeg
+	imagemagick
+	yt-dlp
+	texliveTeTeX
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
