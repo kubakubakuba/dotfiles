@@ -126,7 +126,6 @@
 	nodejs_21
 	libz
 
-	racket
 	libreoffice
 	ffmpeg
 	imagemagick
