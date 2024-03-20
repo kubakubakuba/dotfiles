@@ -131,6 +131,8 @@
 	imagemagick
 	yt-dlp
 	texliveFull
+
+	htop
   ];
 
   #disable keyboard backlight from turning on after sleep
