@@ -117,8 +117,6 @@
 	gnumake
 	cmake
 	gcc
-	clang
-	libclang
 	python3
 	zsh
 	kitty
