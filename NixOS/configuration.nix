@@ -98,6 +98,8 @@
 	discord
 	vscode
 	steam
+
+	discordo
     ];
   };
 
