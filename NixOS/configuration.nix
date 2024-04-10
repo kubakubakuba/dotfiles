@@ -107,6 +107,7 @@
 	avahi
 
 	rpi-imager
+	tigervnc
     ];
   };
 
