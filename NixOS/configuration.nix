@@ -91,7 +91,7 @@
     isNormalUser = true;
     shell = pkgs.zsh;
     description = "Jakub Pelc";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "plugdev" ];
     packages = with pkgs; [
 	brave
 	kate
@@ -102,15 +102,15 @@
 	discordo
 	
 	libusb
-	pkgs.rtl-sdr
-	avahi
+	rtl-sdr
 	gqrx
     ];
   };
 
   # RTL SDR
-  boot.kernelParams = [ "modprobe.blacklist=dvb_usb_rtl28xxu" ];
+  #boot.kernelParams = [ "modprobe.blacklist=dvb_usb_rtl28xxu" ];
   services.udev.packages = [ pkgs.rtl-sdr ];
+  hardware.rtl-sdr.enable = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
