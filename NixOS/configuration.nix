@@ -100,7 +100,8 @@
 	steam
 
 	discordo
-
+	
+	avahi
 	gqrx
     ];
   };
