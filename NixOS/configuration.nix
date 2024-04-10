@@ -100,6 +100,8 @@
 	steam
 
 	discordo
+
+	gqrx
     ];
   };
 
@@ -133,7 +135,7 @@
 	texliveFull
 
 	htop
-	postgresql_16_jit	
+	postgresql_16_jit
   ];
 
   #disable keyboard backlight from turning on after sleep
