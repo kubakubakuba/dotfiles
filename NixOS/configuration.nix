@@ -101,10 +101,16 @@
 
 	discordo
 	
+	libusb
+	pkgs.rtl-sdr
 	avahi
 	gqrx
     ];
   };
+
+  # RTL SDR
+  boot.kernelParams = [ "modprobe.blacklist=dvb_usb_rtl28xxu" ];
+  services.udev.packages = [ pkgs.rtl-sdr ];
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
