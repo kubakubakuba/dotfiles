@@ -104,6 +104,7 @@
 	libusb
 	rtl-sdr
 	gqrx
+	avahi
     ];
   };
 
