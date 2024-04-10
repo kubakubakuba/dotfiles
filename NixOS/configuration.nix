@@ -105,6 +105,8 @@
 	rtl-sdr
 	gqrx
 	avahi
+
+	rpi-imager
     ];
   };
 
