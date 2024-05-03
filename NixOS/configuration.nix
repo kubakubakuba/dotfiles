@@ -108,6 +108,8 @@
 
 	rpi-imager
 	tigervnc
+
+	filezilla
     ];
   };
 
