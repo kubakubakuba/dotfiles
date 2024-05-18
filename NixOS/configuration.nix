@@ -14,7 +14,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  networking.hostName = "nixos"; # Define your hostname.
+  networking.hostName = "iota"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Configure network proxy if necessary
@@ -172,6 +172,7 @@
       "hybrid-sleep.target"
     ];
   };
+
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
