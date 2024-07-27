@@ -110,6 +110,8 @@
 	tigervnc
 
 	filezilla
+
+	noaa-apt
     ];
   };
 
