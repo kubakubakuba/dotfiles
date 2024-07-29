@@ -110,6 +110,7 @@
 	tigervnc
 
 	filezilla
+	vlc
     ];
   };
 
