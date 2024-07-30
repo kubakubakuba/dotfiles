@@ -111,6 +111,8 @@
 
 	filezilla
 	vlc
+
+	ntfs3g
     ];
   };
 
