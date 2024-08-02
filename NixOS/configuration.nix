@@ -68,9 +68,18 @@
     # load-module module-bluez5-discover
   '';
 
+  services.blueman.enable = true;
+
   hardware.pulseaudio = {
     enable = true;
     package = pkgs.pulseaudioFull;
+  };
+
+  systemd.user.services.mpris-proxy = {
+    description = "Mpris proxy";
+    after = [ "network.target" "sound.target" ];
+    wantedBy = [ "default.target" ];
+    serviceConfig.ExecStart = "${pkgs.bluez}/bin/mpris-proxy";
   };
 
   # Configure keymap in X11
