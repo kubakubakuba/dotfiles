@@ -154,6 +154,7 @@
 
 	filezilla
 	vlc
+	obs-studio
 
 	ntfs3g
     ];
