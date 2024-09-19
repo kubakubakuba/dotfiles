@@ -170,6 +170,12 @@
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
+
+  virtualisation.podman = {
+    enable = true;
+    dockerCompat = true;
+  };
+
   environment.systemPackages = with pkgs; [
     	neovim
 	netcat
@@ -196,6 +202,8 @@
 
 	htop
 	postgresql_16_jit
+
+	distrobox
   ];
 
   #disable keyboard backlight from turning on after sleep
