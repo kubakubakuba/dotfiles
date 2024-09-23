@@ -141,9 +141,8 @@
 	discord
 	vscode
 	steam
-
-	discordo
 	
+	#rtl sdr stuff
 	libusb
 	rtl-sdr
 	gqrx
@@ -156,7 +155,7 @@
 	vlc
 	obs-studio
 
-	ntfs3g
+	ntfs3g #to mount NTFS storage
     ];
   };
 
@@ -171,10 +170,20 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
 
-  virtualisation.podman = {
-    enable = true;
-    dockerCompat = true;
-  };
+  #####virtualbox
+  #virtualisation.virtualbox.host.enable = true;
+  #users.extraGroups.vboxusers.members = [ "jakub" ];
+
+  #virtualisation.virtualbox.host.enableExtensionPack = true;
+
+  #virtualisation.virtualbox.guest.enable = true;
+  #virtualisation.virtualbox.draganddrop = true;
+  #####
+
+  ##### virt manager (quemu)
+  virtualisation.libvirtd.enable = true;
+  programs.virt-manager.enable = true;
+  #####
 
   environment.systemPackages = with pkgs; [
     	neovim
@@ -203,7 +212,7 @@
 	htop
 	postgresql_16_jit
 
-	distrobox
+	#distrobox
   ];
 
   #disable keyboard backlight from turning on after sleep
