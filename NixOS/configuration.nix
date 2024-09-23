@@ -181,9 +181,15 @@
   #####
 
   ##### virt manager (quemu)
-  virtualisation.libvirtd.enable = true;
-  programs.virt-manager.enable = true;
+  #virtualisation.libvirtd.enable = true;
+  #programs.virt-manager.enable = true;
   #####
+
+  #####distrobox
+  virtualisation.podman = {
+    enable = true;
+    dockerCompat = true;
+  };
 
   environment.systemPackages = with pkgs; [
     	neovim
@@ -212,7 +218,7 @@
 	htop
 	postgresql_16_jit
 
-	#distrobox
+	distrobox
   ];
 
   #disable keyboard backlight from turning on after sleep
