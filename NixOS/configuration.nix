@@ -82,6 +82,14 @@
 #    serviceConfig.ExecStart = "${pkgs.bluez}/bin/mpris-proxy";
 #  };
 
+  #gnupg pinentry fix
+  services.pcscd.enable = true;
+  programs.gnupg.agent = {
+   enable = true;
+   pinentryFlavor = "curses";
+   enableSSHSupport = true;
+  };
+
   # Configure keymap in X11
   services.xserver = {
     layout = "cz";
@@ -208,6 +216,8 @@
 	graphviz
 	nodejs_21
 	libz
+	gnupg
+	pinentry-curses
 
 	libreoffice
 	ffmpeg
@@ -219,6 +229,9 @@
 	postgresql_16_jit
 
 	distrobox
+
+	gtk3
+	pkg-config
   ];
 
   #disable keyboard backlight from turning on after sleep
