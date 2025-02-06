@@ -230,7 +230,7 @@
 
 	distrobox
 
-	gtk3
+	gtk4
 	pkg-config
   ];
 
