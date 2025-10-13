@@ -1,0 +1,9 @@
+configuration {
+    combi-modi: "window,drun,ssh,run";
+    show-mode: "combi";
+    font: "hack 10";
+    show-icons: true;
+    icon-theme: "Papirus";
+    terminal: "kitty";
+}
+@theme "gruvbox-dark-hard"
