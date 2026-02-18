@@ -1,0 +1,6 @@
+/* fix for email.cz portraits */
+@-moz-document domain("email.seznam.cz") {
+    .portrait {
+        display: none !important;
+    }
+}
